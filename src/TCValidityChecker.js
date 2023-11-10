@@ -1,4 +1,5 @@
 function checkTC(tcno) {
+	tcno = tcno.toString();
 	if (tcno.length != 11)
 		return false;
 	for (let i = 0; i < tcno.length; i++)
