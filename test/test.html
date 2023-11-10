@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC No Validity Checker 2023</title>
+</head>
+ 
+<body>
+    <input type="text" id="tc" /> <br /><button onclick="validateTC();">Validate</button>
+    <script type="text/javascript">
+        function validateTC() {
+            let tcno = document.getElementById('tc').value;
+            let validationResult = checkTC(tcno);
+			if(validationResult)
+				alert(tcno+' is valid');
+			else
+				alert(tcno+' is invalid');
+        }
+        
+ 
+    </script>
+	<script src="../src/TCValidityChecker.js" />
+</body>
+ 
+</html>
