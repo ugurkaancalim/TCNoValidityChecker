@@ -1,4 +1,5 @@
 function checkTC(tcno) {
+	if(tcno === undefined || tcno === null) return false;
 	tcno = tcno.toString();
 	if (tcno.length != 11)
 		return false;
